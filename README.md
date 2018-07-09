@@ -51,7 +51,7 @@ Les chemins
 **‘Local_XLSXPath’** le chemin vers le fichier Excel (si non présent, le programme lira le fichier XML)
 **‘Local_DebugPath’** le chemin vers les logs du programme
 **‘Program_ColX’** le numéro des colonnes lues par le programme dans le fichier Excel
-**‘Program_DateTimeFormat’** indique le format d'écriture de la date. Il est utilisé pour la sauvegarde des fichiers dans le FTP, il doit donc être conforme aux règles d'écritures des noms de fichiers (caractères \/*:?"<>| interdits).
+**‘Program_DateTimeFormat’** indique le format d'écriture de la date. Il est utilisé pour la sauvegarde des fichiers dans le FTP, il doit donc être conforme aux règles d'écritures des noms de fichiers (caractères \\/\*:?"<>| interdits).
 
 ## Informations sur le paramétrage
 
