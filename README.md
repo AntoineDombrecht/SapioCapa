@@ -8,26 +8,26 @@ Gestionnaire intelligent de capacité, gestion des mails.
 2. Installer [WinSCP](https://winscp.net/eng/download.php).
 3. Remplir le fichier de configuration (se reporter à la section *informations sur la configuration*).
 4. Lancer l'executable.
-
-Optionnel : Si vous souhaitez crypter ou décrypter le fichier de configuration, reportez vous à la section *information sur la configuration*.
-
+__
+Optionnel : Si vous souhaitez crypter ou décrypter le fichier de configuration, reportez vous à la section *information sur la configuration*.__
+__
 Indication : La trace d'exécution du programme peut être trouvée dans *output.log* (par défaut).
 
 ### Prérequis
 
-Ce logiciel fonctionne avec la version 4.0 de la librairie .NET, toutes versions anterieures à celle-ci pourraient entrainer des dysfonctionnements.
-
+Ce logiciel fonctionne avec la version 4.0 de la librairie .NET, toutes versions anterieures à celle-ci pourraient entrainer des dysfonctionnements.__
+__
 Afin de pouvoir décrypter les données sensibles utilisées pour la configuration du programme (mots de passe, noms de compte utilisateur et identifiants FTP) le logiciel [ASP_Regiis.exe](https://msdn.microsoft.com/fr-fr/library/k6h9cz8h(v=vs.100).aspx) est utilisé. 
-Celui-ci est présent dans le répertoire *C:\WINDOWS\Microsoft.NET\Framework\[v4.0.30319]\*.
-
-Ce logiciel pilote [WinSCP](https://winscp.net/eng/download.php), il faut donc indiquer au programme où se situe l'executable WinSCP comme indiqué ci-après.
+Celui-ci est présent dans le répertoire *C:\WINDOWS\Microsoft.NET\Framework\[v4.0.30319]\*.__
+__
+Ce logiciel pilote [WinSCP](https://winscp.net/eng/download.php), il faut donc indiquer au programme où se situe l'executable WinSCP comme indiqué ci-après.__
 
 ### Informations sur la configuration
 
-Les données de configuration sont situées dans le fichier *MailConnector.exe.config* pour le décrypter veillez utiliser la commande suivante : ```rename MailConnector.exe.config web.config && "\[chemin vers regiis]\aspnet_regiis.exe" -pdf "appSettings" "\[chemin vers le repertoire d'installation]\bin\release" && rename web.config MailConnector.exe.config```
-
+Les données de configuration sont situées dans le fichier *MailConnector.exe.config* pour le décrypter veillez utiliser la commande suivante : ```rename MailConnector.exe.config web.config && "\[chemin vers regiis]\aspnet_regiis.exe" -pdf "appSettings" "\[chemin vers le repertoire d'installation]\bin\release" && rename web.config MailConnector.exe.config```__
+__
 La commande de cryptage est quasi similaire : ```rename MailConnector.exe.config web.config && "\[chemin vers regiis]\aspnet_regiis.exe" -pef "appSettings" "\[chemin vers le repertoire d'installation]\bin\release" && rename web.config MailConnector.exe.config```
-
+__
 On retrouve dans le fichier de configuration les données concernant le serveur mail, le serveur ftp, les chemins relatifs et le programme.
 
 #### Le serveur FTP
@@ -62,21 +62,21 @@ Une fois la configuration faite vous pouvez commencer à paramétrer le logiciel
 
 #### Concernant le fonctionnement du programme.
 
-Le programme peut fonctionner avec la structure minimale suivante
-|- bin - release | - WinSCPnet.dll
-                 | - Microsoft.Exchange.WebServices.dll
-                 | - MailConnector.exe.config
-                 | - MailConnector.exe
-|- data-set.xlsx et/ou data-set.xml
-|- WinSCP.exe
-
+Le programme peut fonctionner avec la structure minimale suivante__
+|- bin - release | - WinSCPnet.dll__
+                 | - Microsoft.Exchange.WebServices.dll__
+                 | - MailConnector.exe.config__
+                 | - MailConnector.exe__
+|- data-set.xlsx et/ou data-set.xml__
+|- WinSCP.exe__
+__
 Dans le cas où le fichier XML n'est pas déjà présent, il est généré par le programme depuis le fichier Excel, il en va de même pour les fichiers de logs (winscp.log et output.log).
 
 #### Concernant le fichier excel
 
 Cette version implémente les actions suivantes : ```Marque comme lu, Déplacer vers, transéferer à, supprimer```
 L'accentuation et la mise en forme des entrées du tableau n'a pas d'importance, seul l'orthographe compte.
-Une suite d'actions est possible si on sépare chacune d'entre elle par une virgule sans laisser d'espace, exemple : ```Marquer comme lu,déplacer vers,supprimer```.
+Une suite d'actions est possible si on sépare chacune d'entre elle par une virgule sans laisser d'espace, exemple : ```Marquer comme lu,déplacer vers,supprimer```.__
 On ne peut en revanche indiquer qu'une valeur pour le type de destinataire (ou destination), exemple : ```adresse mail,fichier mail``` n'est pas possible. Par extension la suite d'action ```Transférer à,déplacer vers``` n'est pas possible car elle nécessite de rentrer l'adresse mail et le fichier dans le même champ destinataire.
 
 #### Concernant le fichier XML
