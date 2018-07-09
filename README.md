@@ -19,7 +19,7 @@ Indication : La trace d'exécution du programme peut être trouvée dans *output
 Ce logiciel fonctionne avec la version 4.0 de la librairie .NET, toutes versions anterieures à celle-ci pourraient entrainer des dysfonctionnements. <br />
  <br />
 Afin de pouvoir décrypter les données sensibles utilisées pour la configuration du programme (mots de passe, noms de compte utilisateur et identifiants FTP) le logiciel [ASP_Regiis.exe](https://msdn.microsoft.com/fr-fr/library/k6h9cz8h(v=vs.100).aspx) est utilisé. 
-Celui-ci est présent dans le répertoire *C:\WINDOWS\Microsoft.NET\Framework\[v4.0.30319]\*. <br />
+Celui-ci est présent dans le répertoire *C:\WINDOWS\Microsoft.NET\Framework\[v4.0.30319]\\*. <br />
  <br />
 Ce logiciel pilote [WinSCP](https://winscp.net/eng/download.php), il faut donc indiquer au programme où se situe l'executable WinSCP comme indiqué ci-après. <br />
 
