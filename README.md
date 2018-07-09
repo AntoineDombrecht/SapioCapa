@@ -8,6 +8,7 @@ Gestionnaire intelligent de capacité, gestion des mails.
 2. Installer [WinSCP](https://winscp.net/eng/download.php).
 3. Remplir le fichier de configuration (se reporter à la section *informations sur la configuration*).
 4. Lancer l'executable.
+5. Enjoy :+1:
  <br />
 Optionnel : Si vous souhaitez crypter ou décrypter le fichier de configuration, reportez vous à la section *information sur la configuration*. <br />
  <br />
