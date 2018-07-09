@@ -64,13 +64,19 @@ Une fois la configuration faite vous pouvez commencer à paramétrer le logiciel
 #### Concernant le fonctionnement du programme.
 
 Le programme peut fonctionner avec la structure minimale suivante <br />
-|- bin - release | - WinSCPnet.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - Microsoft.Exchange.WebServices.dll <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - MailConnector.exe.config <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| - MailConnector.exe <br />
-|- data-set.xlsx et/ou data-set.xml <br />
-|- WinSCP.exe <br />
- <br />
+.  <br />
+├── bin  <br />
+│   └── release  <br />
+|       ├── WinSCPnet.dll  <br />
+|       ├── Microsoft.Exchange.WebServices.dll  <br />
+|       ├── MailConnector.exe.config  <br />
+|       └── MailConnector.exe  <br />
+├── data-set.xlsx et/ou data-set.xml <br />
+├── WinSCP.exe <br />
+└── README.md <br />
+
+1 dossier, 7 fichiers
+
 Dans le cas où le fichier XML n'est pas déjà présent, il est généré par le programme depuis le fichier Excel, il en va de même pour les fichiers de logs (winscp.log et output.log).
 
 #### Concernant le fichier excel
