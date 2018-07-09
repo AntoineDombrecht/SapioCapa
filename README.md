@@ -9,7 +9,7 @@ Gestionnaire intelligent de capacité, gestion des mails.
 3. Remplir le fichier de configuration (se reporter à la section *informations sur la configuration*).
 4. Lancer l'executable.
 5. Enjoy :+1:
- <br />
+
 Optionnel : Si vous souhaitez crypter ou décrypter le fichier de configuration, reportez vous à la section *information sur la configuration*. <br />
  <br />
 Indication : La trace d'exécution du programme peut être trouvée dans *output.log* (par défaut).
@@ -67,10 +67,10 @@ Le programme peut fonctionner avec la structure minimale suivante <br />
 .  <br />
 ├── bin  <br />
 │   └── release  <br />
-|       ├── WinSCPnet.dll  <br />
-|       ├── Microsoft.Exchange.WebServices.dll  <br />
-|       ├── MailConnector.exe.config  <br />
-|       └── MailConnector.exe  <br />
+│       ├── WinSCPnet.dll  <br />
+│       ├── Microsoft.Exchange.WebServices.dll  <br />
+│       ├── MailConnector.exe.config  <br />
+│       └── MailConnector.exe  <br />
 ├── data-set.xlsx et/ou data-set.xml <br />
 ├── WinSCP.exe <br />
 └── README.md <br />
