@@ -66,11 +66,11 @@ Une fois la configuration faite vous pouvez commencer à paramétrer le logiciel
 Le programme peut fonctionner avec la structure minimale suivante <br />
 .  <br />
 ├── bin  <br />
-│&nbsp;&nbsp;&nbsp;└── release  <br />
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── WinSCPnet.dll  <br />
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Microsoft.Exchange.WebServices.dll  <br />
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── MailConnector.exe.config  <br />
-│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── MailConnector.exe  <br />
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── release  <br />
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── WinSCPnet.dll  <br />
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── Microsoft.Exchange.WebServices.dll  <br />
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;├── MailConnector.exe.config  <br />
+│&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;└── MailConnector.exe  <br />
 ├── data-set.xlsx et/ou data-set.xml <br />
 ├── WinSCP.exe <br />
 └── README.md <br />
