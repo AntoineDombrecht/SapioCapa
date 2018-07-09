@@ -30,28 +30,28 @@ La commande de cryptage est quasi similaire : ```rename MailConnector.exe.config
 
 On retrouve dans le fichier de configuration les données concernant le serveur mail, le serveur ftp, les chemins relatifs et le programme.
 
-Le serveur FTP
-**‘FTP_Protocol’** correspond au type du serveur, il peut prendre les valeurs suivantes : 'ftp' ou 'sftp'
-**‘FTP_HostName’**, l'adresse du serveur 
-**‘FTP_Port’**, le port du serveur
-**‘FTP_UserName’**, l'adresse de connexion au FTP
-**‘FTP_Password’**, le mot de passe de connexion au FTP
-**‘FTP_SshHostKeyFingerprint’**, la clé SSH dans le cas d'une connexion sécurisée au FTP 
+### Le serveur FTP
+* **‘FTP_Protocol’**  - correspond au type du serveur, il peut prendre les valeurs suivantes : 'ftp' ou 'sftp'
+* **‘FTP_HostName’** - l'adresse du serveur 
+* **‘FTP_Port’** - le port du serveur
+* **‘FTP_UserName’** - l'adresse de connexion au FTP
+* **‘FTP_Password’** - le mot de passe de connexion au FTP
+* **‘FTP_SshHostKeyFingerprint’** - la clé SSH dans le cas d'une connexion sécurisée au FTP 
 
-Le serveur Mail
-**‘Mail_UserName’**, l'adresse mail de l'utilisateur
-**‘Mail_Password’**, le mot de passe de l'utilisateur
-**‘Mail_Server’**, l'adresse du serveur
+### Le serveur Mail
+* **‘Mail_UserName’** - l'adresse mail de l'utilisateur
+* **‘Mail_Password’** - le mot de passe de l'utilisateur
+* **‘Mail_Server’** - l'adresse du serveur
 
-Les chemins
-**‘WinSCP_ExecutablePath’** le chemin vers l'executable WinSCP (pilotage de WinSCP) 
-**‘WinSCP_DebugLogPath’** le chemin vers les log WinSCP
-**‘Local_TempPath’** le chemin vers le dossier cache
-**‘Local_XMLPath’** le chemin vers le fichier XML (si non présent, il sera généré depuis le fichier excel)
-**‘Local_XLSXPath’** le chemin vers le fichier Excel (si non présent, le programme lira le fichier XML)
-**‘Local_DebugPath’** le chemin vers les logs du programme
-**‘Program_ColX’** le numéro des colonnes lues par le programme dans le fichier Excel
-**‘Program_DateTimeFormat’** indique le format d'écriture de la date. Il est utilisé pour la sauvegarde des fichiers dans le FTP, il doit donc être conforme aux règles d'écritures des noms de fichiers (caractères \\/\*:?"<>| interdits).
+### Les chemins
+* **‘WinSCP_ExecutablePath’** - le chemin vers l'executable WinSCP (pilotage de WinSCP) 
+* **‘WinSCP_DebugLogPath’** - le chemin vers les log WinSCP
+* **‘Local_TempPath’** - le chemin vers le dossier cache
+* **‘Local_XMLPath - le chemin vers le fichier XML (si non présent, il sera généré depuis le fichier excel)
+* **‘Local_XLSXPath’** - le chemin vers le fichier Excel (si non présent, le programme lira le fichier XML)
+* **‘Local_DebugPath’** - le chemin vers les logs du programme
+* **‘Program_ColX’** - le numéro des colonnes lues par le programme dans le fichier Excel
+* **‘Program_DateTimeFormat’** - Indique le format d'écriture de la date. Il est utilisé pour la sauvegarde des fichiers dans le FTP, il doit donc être conforme aux règles d'écritures des noms de fichiers (caractères \\/\*:?"<>| interdits).
 
 ## Informations sur le paramétrage
 
