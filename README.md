@@ -54,6 +54,7 @@ On retrouve dans le fichier de configuration les données concernant le serveur 
 * **Program_ColX** - le numéro des colonnes lues par le programme dans le fichier Excel
 * **Program_DateTimeFormat** - Indique le format d'écriture de la date. Il est utilisé pour la sauvegarde des fichiers dans le FTP, il doit donc être conforme aux règles d'écritures des noms de fichiers (caractères \\/\*:?"<>| interdits).
 * **Program_RegExSubject** - Expression régulière concernant l'écriture des objets dans le tableau Excel. Si la valeur est "exact" seuls les mails dont l'objet est strictement celui indiqué dans le tableau seront traités. Dans le cas contraire (i.e. pour toutes les autres valeurs du champ) le programme selectionnera les mails dont l'objet contient l'expression indiquée.
+* **Program_AttachmentType** - Types de format pris en charge lors de l'importation des pièces jointes séparés par des virgules et sans espace (e.g ".pdf,.xslx,.csv").
 
 ### Informations sur le paramétrage
 
