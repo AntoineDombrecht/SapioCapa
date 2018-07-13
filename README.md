@@ -79,7 +79,7 @@ Dans le cas où le fichier XML n'est pas déjà présent, il est généré par l
 
 #### Concernant le fichier excel
 
-Cette version implémente les actions suivantes : ```Marque comme lu, Déplacer vers, transéferer à, supprimer```
+Cette version implémente les actions suivantes : ```Marque comme lu, Déplacer vers, transférer à, supprimer```
 L'accentuation et la mise en forme des entrées du tableau n'a pas d'importance, seul l'orthographe compte.
 Une suite d'actions est possible si on sépare chacune d'entre elle par une virgule sans laisser d'espace, exemple : ```Marquer comme lu,déplacer vers,supprimer```. <br />
 On ne peut en revanche indiquer qu'une valeur pour le type de destinataire (ou destination), exemple : ```adresse mail,fichier mail``` n'est pas possible. Par extension la suite d'action ```Transférer à,déplacer vers``` n'est pas possible car elle nécessite de rentrer l'adresse mail et le fichier dans le même champ destinataire.<br />
