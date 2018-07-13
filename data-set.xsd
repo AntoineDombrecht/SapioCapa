@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	
+	<!-- root -->
+	<xsd:element name="root">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="types_destinataires"/>
+				<xsd:element ref="types_actions"/>
+				<xsd:element ref="records"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	
+	<!-- types_destinataires -->
+	<xsd:element name="types_destinataires">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="destinataire" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- types_actions -->
+	<xsd:element name="types_actions">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="action" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- records -->
+	<xsd:element name="records">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="record" minOccurs="0" maxOccurs="unbounded"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- record -->
+	<xsd:element name="record">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element ref="action"/>
+				<xsd:choice>
+					<xsd:sequence>
+						<xsd:element ref="objet"/>
+						<xsd:element ref="expediteur" minOccurs="0"/>
+					</xsd:sequence>
+					<xsd:element ref="expediteur"/>
+				</xsd:choice>
+				<xsd:element ref="destinataire" minOccurs="0" />
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+	 
+	<!-- objet -->
+	<xsd:element name="objet" type="xsd:string"/>
+	
+	<!-- expediteur -->
+	<xsd:element name="expediteur" type="xsd:string"/>
+	
+	<!-- action -->
+	<xsd:element name="action">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<!-- type_action -->
+					<xsd:attribute name="type_action" type="xsd:IDREFS"/>
+					<xsd:attribute name="num" type="xsd:ID" />
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+	
+	<!-- destinataire -->
+	<xsd:element name="destinataire">
+		<xsd:complexType>
+			<xsd:simpleContent>
+				<xsd:extension base="xsd:string">
+					<!-- type_destinataire-->
+					<xsd:attribute name="type_destinataire" type="xsd:IDREFS"/>
+					<xsd:attribute name="num" type="xsd:ID" />
+				</xsd:extension>
+			</xsd:simpleContent>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
