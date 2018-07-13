@@ -88,7 +88,7 @@ Veillez à toujours étendre les tableaux plutôt que les diminuer. Si vous le d
 ```diff 
 - Attention
 ```
-Les mails traités le sont depuis la boite de réception uniquement. Dès lors qu'un mail est déplacé ailleurs, il va de soi qu'il ne pourra plus être traité par le programme.
+**TOUT DEPLACEMENT EST IRREVERSIBLE** Les mails traités le sont depuis la boite de réception uniquement. Dès lors qu'un mail est déplacé ailleurs, il va de soi qu'il ne pourra plus être pris en compte par les futures opérations. 
 #### Concernant le fichier XML
 
 Un fichier *data-set.xsd* indique la forme que doit prendre le fichier XML afin d'être conforme au parseur du programme. <br/>
