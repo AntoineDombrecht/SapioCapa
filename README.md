@@ -1,4 +1,4 @@
-# SapioCapa - MailConnector
+# SapioCapa - MailConnector STS
 
 Gestionnaire intelligent de capacité, gestion des mails.
 
