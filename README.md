@@ -87,6 +87,7 @@ Veillez à toujours étendre les tableaux plutôt que les diminuer. Si vous le d
 
 #### Concernant le fichier XML
 
-Un fichier *data-set.xsd* indique la forme que doit prendre le fichier XML afin d'être conforme au parseur du programme.
+Un fichier *data-set.xsd* indique la forme que doit prendre le fichier XML afin d'être conforme au parseur du programme. <br/>
+Le fichier xsd doit toujours être présent dans le répertoire d'installation, ceci afin que le programme puisse alerter l'utilisateur d'un défaut d'écriture dans le xml. Des [outils](https://www.liquid-technologies.com/online-xsd-validator) en ligne réalisant la même tâche existent.
 
 
