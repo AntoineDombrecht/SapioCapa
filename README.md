@@ -85,9 +85,7 @@ L'accentuation et la mise en forme des entrées du tableau n'a pas d'importance,
 Une suite d'actions est possible si on sépare chacune d'entre elle par une virgule sans laisser d'espace, exemple : ```Marquer comme lu,déplacer vers,supprimer```. <br />
 On ne peut en revanche indiquer qu'une valeur pour le type de destinataire (ou destination), exemple : ```adresse mail,fichier mail``` n'est pas possible. Par extension la suite d'action ```Transférer à,déplacer vers``` n'est pas possible car elle nécessite de rentrer l'adresse mail et le fichier dans le même champ destinataire.<br />
 Veillez à toujours étendre les tableaux plutôt que les diminuer. Si vous le diminuez verifiez que les cellules du tableau ne soient pas verrouillées.<br />
-```diff
--Attention
-```
+`diff -Attention`
 
 #### Concernant le fichier XML
 
