@@ -53,6 +53,7 @@ On retrouve dans le fichier de configuration les données concernant le serveur 
 * **Local_DebugPath** - le chemin vers les logs du programme
 * **Program_ColX** - le numéro des colonnes lues par le programme dans le fichier Excel
 * **Program_DateTimeFormat** - Indique le format d'écriture de la date. Il est utilisé pour la sauvegarde des fichiers dans le FTP, il doit donc être conforme aux règles d'écritures des noms de fichiers (caractères \\/\*:?"<>| interdits).
+* **Program_RegExSubject** - Expression régulière concernant l'écriture des objets dans le tableau Excel. Si la valeur est "exact" seuls les mails dont l'objet est strictement celui indiqué dans le tableau seront traités. Dans le cas contraire (i.e. pour toutes les autres valeurs du champ) le programme selectionnera les mails dont l'objet contient l'expression indiquée.
 
 ### Informations sur le paramétrage
 
