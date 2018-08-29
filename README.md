@@ -1,6 +1,6 @@
 # SapioCapa - MailConnector STS
 
-Gestionnaire intelligent de capacité, gestion des mails.
+Gestionnaire intelligent de capacité, gestion des données stockées sur Microsoft Exchange.
 
 ### Pour commencer
 
