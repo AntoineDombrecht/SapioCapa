@@ -16,7 +16,7 @@ Indication : La trace d'exécution du programme peut être trouvée dans *output
 
 ### Prérequis
 
-Ce logiciel fonctionne avec la version 4.0 de la librairie .NET, toutes versions anterieures à celle-ci pourraient entrainer des disfonctionnements. <br />
+Ce logiciel fonctionne avec la version 4.0 de la librairie .NET, toute version antérieure à celle-ci pourrait entrainer des disfonctionnements. <br />
  <br />
 Afin de pouvoir décrypter les données sensibles utilisées pour la configuration du programme (mots de passe, noms de compte utilisateur et identifiants FTP) le logiciel [ASP_Regiis.exe](https://msdn.microsoft.com/fr-fr/library/k6h9cz8h(v=vs.100).aspx) est utilisé. 
 Celui-ci est présent dans le répertoire *C:\WINDOWS\Microsoft.NET\Framework\[v4.0.30319]\\*. <br />
@@ -94,6 +94,6 @@ Veillez à toujours étendre les tableaux plutôt que les diminuer. Si vous le d
 #### Concernant le fichier XML
 
 Un fichier *data-set.xsd* indique la forme que doit prendre le fichier XML afin d'être conforme au parseur du programme. <br/>
-Le fichier xsd doit toujours être présent dans le répertoire d'installation, ceci afin que le programme puisse alerter l'utilisateur d'un défaut d'écriture dans le xml. Des [outils](https://www.liquid-technologies.com/online-xsd-validator) en ligne réalisant la même tâche existent.
+Le fichier xsd doit toujours être présent dans le répertoire d'installation, ceci afin que le programme puisse alerter l'utilisateur d'un défaut d'écriture dans le xml.
 
 
