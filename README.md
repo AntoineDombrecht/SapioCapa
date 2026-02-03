@@ -10,7 +10,7 @@ Gestionnaire intelligent de capacité, gestion des données stockées sur Micros
 4. Lancer l'executable.
 5. Enjoy :+1:
 
-Optionnel : Si vous souhaitez crypter ou décrypter le fichier de configuration, reportez vous à la section *information sur la configuration*. <br />
+Optionnel : Si vous souhaitez chiffrer ou déchiffrer le fichier de configuration, reportez vous à la section *information sur la configuration*. <br />
  <br />
 Indication : La trace d'exécution du programme peut être trouvée dans *output.log* (par défaut).
 
@@ -18,16 +18,16 @@ Indication : La trace d'exécution du programme peut être trouvée dans *output
 
 Ce logiciel fonctionne avec la version 4.0 de la librairie .NET, toute version antérieure à celle-ci pourrait entrainer des disfonctionnements. <br />
  <br />
-Afin de pouvoir décrypter les données sensibles utilisées pour la configuration du programme (mots de passe, noms de compte utilisateur et identifiants FTP) le logiciel [ASP_Regiis.exe](https://msdn.microsoft.com/fr-fr/library/k6h9cz8h(v=vs.100).aspx) est utilisé. 
+Afin de pouvoir déchiffrer les données sensibles utilisées pour la configuration du programme (mots de passe, noms de compte utilisateur et identifiants FTP) le logiciel [ASP_Regiis.exe](https://msdn.microsoft.com/fr-fr/library/k6h9cz8h(v=vs.100).aspx) est utilisé. 
 Celui-ci est présent dans le répertoire *C:\WINDOWS\Microsoft.NET\Framework\[v4.0.30319]\\*. <br />
  <br />
 Ce logiciel pilote [WinSCP](https://winscp.net/eng/download.php), il faut donc indiquer au programme où se situe l'executable WinSCP comme indiqué ci-après. <br />
 
 ### Informations sur la configuration
 
-Les données de configuration sont situées dans le fichier *MailConnector.exe.config* pour le décrypter veillez utiliser la commande suivante : ```rename MailConnector.exe.config web.config && "\[chemin vers regiis]\aspnet_regiis.exe" -pdf "appSettings" "\[chemin vers le repertoire d'installation]\bin\release" && rename web.config MailConnector.exe.config``` <br />
+Les données de configuration sont situées dans le fichier *MailConnector.exe.config* pour le déchiffrer veillez utiliser la commande suivante : ```rename MailConnector.exe.config web.config && "\[chemin vers regiis]\aspnet_regiis.exe" -pdf "appSettings" "\[chemin vers le repertoire d'installation]\bin\release" && rename web.config MailConnector.exe.config``` <br />
  <br />
-La commande de cryptage est quasi similaire : ```rename MailConnector.exe.config web.config && "\[chemin vers regiis]\aspnet_regiis.exe" -pef "appSettings" "\[chemin vers le repertoire d'installation]\bin\release" && rename web.config MailConnector.exe.config``` <br />
+La commande de chiffrement est quasi similaire : ```rename MailConnector.exe.config web.config && "\[chemin vers regiis]\aspnet_regiis.exe" -pef "appSettings" "\[chemin vers le repertoire d'installation]\bin\release" && rename web.config MailConnector.exe.config``` <br />
  <br />
 On retrouve dans le fichier de configuration les données concernant le serveur mail, le serveur ftp, les chemins relatifs et le programme.
 
